@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Jungle.DamGame" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/jungle_primary</item>
+        <item name="colorPrimaryVariant">@color/jungle_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/jungle_secondary_variant</item>
+        <item name="colorSecondaryVariant">@color/jungle_light</item>
+        <item name="colorOnSecondary">@color/jungle_montain</item>
+        <item name="buttonStyle">@drawable/button_gradient</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">DamGame</string>
+    <string name="question">Pregunta</string>
+    <string name="select_start">Selecciona las estrellas que quieres iluminar</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="crear_ambiente">Crear ambiente</string>
+    <string name="quitar_ambiente">Quitar ambiente</string>
+    <string name="feliz_navidad">Feliz Navidad 2º DAM!!!</string>
+    <string name="vida">Vida</string>
+    <string name="puntos">" puntos"</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="registro">Registro</string>
+    <string name="login">Login</string>
+
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desierto">Desierto</string>
+    <string name="hielo">Hielo</string>
+    <string name="submarino">Submarino</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="espacio">Espacio</string>
+    <string name="selva">Selva</string>
+    <string name="tema">Tema</string>
+    <string name="volver">Volver</string>
+    <!-- TEMAS -->
+    <string name="TEMA_CIUDAD">100</string>
+    <string name="TEMA_DESIERTO">101</string>
+    <string name="TEMA_ESPACIO">102</string>
+    <string name="TEMA_HIELO">103</string>
+    <string name="TEMA_SELVA">104</string>
+    <string name="TEMA_SUBMARINO">105</string>
+    <string name="seleccione_tema">Seleccione un tema</string>
+    <string name="temas">Temas</string>
+    <string name="preguntas">Preguntas</string>
+    <string name="seleccione_pregunta">Seleccione una question</string>
+    <string name="ambiente">Ambiente</string>
+    <string name="ambientes">Ambientes</string>
+    <string name="seleccione_ambiente">Seleccione un ambiente</string>
+    <string name="materias">Materias</string>
+    <string name="seleccione_materia">Seleccione una etapa y materia</string>
+    <!-- ASIGNATURAS -->
+    <string name="eso1_biologia_geologia">ESO 1º/Biología y Geología</string>
+    <string name="comenzar">Comenzar</string>
+    <string name="vidas">Vidas</string>
+    <string name="Puntos">Puntos</string>
+    <string name="respuestas">Respuestas</string>
+    <string name="cero">0</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="desert_montain">#6b3f2c</color>
+    <color name="desert_dark">#caaa63</color>
+    <color name="desert_light">#ffffc3</color>
+    <color name="desert_primary">#8f6440</color>
+    <color name="desert_primary_variant">#c1926b</color>
+    <color name="desert_secondary_variant">#f5c299</color>
+
+    <color name="jungle_primary">#135E46</color>
+    <color name="jungle_primary_variant">#478966</color>
+    <color name="jungle_secondary_variant">#73A788</color>
+    <color name="jungle_light">#E3C6AD</color>
+    <color name="jungle_dark">#B67B65</color>
+    <color name="jungle_montain">#D09D7B</color>
+</resources>

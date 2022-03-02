@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ilu_2_done"
+    android:orientation="vertical"
+    tools:context="dam.gala.damgame.activities.ActMainStart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="right|top"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="@drawable/ajuste"
+            android:theme="@style/Jungle.DamGame" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:gravity="center"
+            android:shadowColor="@color/white"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="11"
+            android:text="DAMGAME"
+            android:textColor="@color/jungle_primary_variant"
+            android:textSize="45sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Ranking"
+            android:theme="@style/Jungle.DamGame" />
+
+        <Button
+            android:id="@+id/btIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/comenzar"
+            android:theme="@style/Jungle.DamGame" />
+
+    </LinearLayout>
+
+</LinearLayout>

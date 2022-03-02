@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Desert.DamGame" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/desert_primary</item>
+        <item name="colorPrimaryVariant">@color/desert_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/desert_secondary_variant</item>
+        <item name="colorSecondaryVariant">@color/desert_light</item>
+        <item name="colorOnSecondary">@color/desert_montain</item>
+        <item name="buttonStyle">@drawable/button_gradient</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

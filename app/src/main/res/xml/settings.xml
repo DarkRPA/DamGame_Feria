@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/ambientes">
+
+        <ListPreference
+            android:defaultValue="@string/TEMA_DESIERTO"
+            android:entries="@array/ambientes"
+            android:entryValues="@array/ambientes_v"
+            android:key="ambient_setting"
+            android:summary="@string/seleccione_ambiente" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/preguntas">
+
+        <ListPreference
+            android:defaultValue="1011"
+            android:entries="@array/materias"
+            android:entryValues="@array/materias_v"
+            android:key="topics"
+            android:summary="@string/seleccione_materia" />
+    </PreferenceCategory>
+</PreferenceScreen>

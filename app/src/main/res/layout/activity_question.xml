@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyQuestionMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="dam.gala.damgame.activities.QuestionActivity">
+
+    <LinearLayout
+        android:id="@+id/lyQuestionEnunciado"
+        android:layout_width="match_parent"
+        android:layout_height="286dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <!--Este textview dibuja el enunciado de la question. Tiene un peso de 1, lo que hace que baje ciertamente dentro del layout
+        para que el contenido de la question quepa. Tiene un tamaño de 24sp y asignado un texto por defecto que se modifica a nivel de código-->
+        <TextView
+            android:id="@+id/tvEnunciado"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyPreguntas"
+        android:layout_width="match_parent"
+        android:layout_height="349dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--Dentro de este radiogroup es donde se muestran las preguntas. Este radio group agrupa todos los checkbox para poder ser indentificados
+        fácilmente desde código. No tiene mucho contenido, lo más relevante del mismo es el identificador.-->
+        <RadioGroup
+            android:id="@+id/rgroup"
+            android:layout_width="match_parent"
+            android:layout_height="251dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyVidaPuntos"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!--Este radio group representa las dos opciones que tiene el usuario: elegir una vida o puntos en su defecto.-->
+        <RadioGroup
+            android:id="@+id/rgPuntosVida"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--Este radio button representa la opción de los puntos. Adapta su ancho y alto al layout que lo contiene. Tiene asignado un
+            texto que indica su objetivo, "puntos"-->
+
+            <!--Este radio button representa la opción de la vida. Adapta su ancho y alto al layout que lo contiene. Tiene asignado un
+            texto que indica su objetivo, "vida"-->
+            <RadioButton
+                android:id="@+id/rbtnPuntos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Puntos"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbtnVida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vida"
+                android:textColor="@color/white" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

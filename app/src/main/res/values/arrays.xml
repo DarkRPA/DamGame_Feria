@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ambientes">
+        <item>@string/desierto</item>
+        <item>@string/submarino</item>
+        <item>@string/espacio</item>
+        <item>@string/selva</item>
+        <item>@string/ciudad</item>
+        <item>@string/hielo</item>
+    </string-array>
+    <string-array name="ambientes_v">
+        <item>@string/TEMA_CIUDAD</item>
+        <item>@string/TEMA_DESIERTO</item>
+        <item>@string/TEMA_ESPACIO</item>
+        <item>@string/TEMA_HIELO</item>
+        <item>@string/TEMA_SELVA</item>
+        <item>@string/TEMA_SUBMARINO</item>
+    </string-array>
+    <string-array name="materias">
+        <item>ESO 1º/Biología y Geología</item>
+        <item>ESO 1º/Geografía e Historia</item>
+        <item>ESO 1º/Lengua Castellana</item>
+        <item>ESO 2º/Ciencias de la Naturaleza</item>
+        <item>ESO 2º/Geografía e Historia</item>
+        <item>ESO 2º/Lengua Castellana</item>
+        <item>ESO 3º/Biología y Geología</item>
+        <item>ESO 3º/Física y Química</item>
+        <item>ESO 3º/Geografía e Historia</item>
+        <item>ESO 3º/Lengua Castellana</item>
+        <item>ESO 4º/Biología</item>
+        <item>ESO 4º/Física y Química</item>
+        <item>ESO 4º/Geografía e Historia</item>
+        <item>ESO 4º/Lengua Castellana</item>
+    </string-array>
+    <string-array name="materias_v">
+        <item>1011</item>
+        <item>1012</item>
+        <item>1013</item>
+        <item>1021</item>
+        <item>1022</item>
+        <item>1023</item>
+        <item>1031</item>
+        <item>1032</item>
+        <item>1033</item>
+        <item>1034</item>
+        <item>1041</item>
+        <item>1042</item>
+        <item>1043</item>
+        <item>1044</item>
+    </string-array>
+</resources>
