@@ -28,7 +28,7 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTema();
         getSupportFragmentManager().beginTransaction().replace(android.R.id.content,
-                new SettingsFragment()).commit();
+                new SettingsFragment(this)).commit();
     }
 
     /**

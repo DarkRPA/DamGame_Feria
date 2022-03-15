@@ -22,6 +22,8 @@ public class ActMainStart extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_act_main_start);
 
+        //getSharedPreferences(this.getTitle().toString(), Context.MODE_PRIVATE).edit().clear().commit();
+
         //hideSystemUI();
         setTema();
 
