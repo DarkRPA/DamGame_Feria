@@ -65,9 +65,9 @@ public class ActMainStart extends AppCompatActivity {
                 Context.MODE_PRIVATE).
                 getString("theme_setting",String.valueOf(GameUtil.TEMA_SELVA)));
         switch(this.sceneCode){
-/*            case GameUtil.TEMA_DESIERTO:
+             case GameUtil.TEMA_DESIERTO:
                 setTheme(R.style.Desert_DamGame);
-                break;*/
+                break;
             case GameUtil.TEMA_SELVA:
                 setTheme(R.style.Jungle_DamGame);
                 break;

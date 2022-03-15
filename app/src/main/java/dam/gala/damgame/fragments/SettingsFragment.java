@@ -31,6 +31,8 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         preferencias.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
+                //Debemos de guardar la nueva seleccion en las sharedPreferences
+                System.out.println("DEBUG: "+(String)newValue);
                 Activity actividad = SettingsFragment.this.actividad;
                 SharedPreferences preferences = actividad.getSharedPreferences(actividad.getTitle().toString(), Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();

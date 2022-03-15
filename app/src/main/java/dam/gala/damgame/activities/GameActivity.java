@@ -113,7 +113,7 @@ public class GameActivity extends AppCompatActivity implements InterfaceDialog {
     private void startGame(){
         this.sceneCode = Integer.parseInt(getSharedPreferences(this.getTitle().toString(),
                 Context.MODE_PRIVATE).
-                getString("ambient_setting",String.valueOf(GameUtil.TEMA_DESIERTO)));
+                getString("theme_setting",String.valueOf(GameUtil.TEMA_DESIERTO)));
         this.gameMove = Play.createGameMove(this,this.sceneCode);
         this.scene = this.gameMove.getScene();
         this.config = new GameConfig(this.scene);
@@ -192,9 +192,9 @@ public class GameActivity extends AppCompatActivity implements InterfaceDialog {
                 Context.MODE_PRIVATE).
                 getString("theme_setting",String.valueOf(GameUtil.TEMA_SELVA)));
         switch(this.sceneCode){
-/*            case GameUtil.TEMA_DESIERTO:
+            case GameUtil.TEMA_DESIERTO:
                 setTheme(R.style.Desert_DamGame);
-                break;*/
+                break;
             case GameUtil.TEMA_SELVA:
                 setTheme(R.style.Jungle_DamGame);
                 break;

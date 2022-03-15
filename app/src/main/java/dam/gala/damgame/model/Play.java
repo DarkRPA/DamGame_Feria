@@ -2,6 +2,7 @@ package dam.gala.damgame.model;
 
 import androidx.annotation.NonNull;
 import dam.gala.damgame.activities.GameActivity;
+import dam.gala.damgame.scenes.DesertScene;
 import dam.gala.damgame.utils.GameUtil;
 import dam.gala.damgame.views.CrashView;
 import dam.gala.damgame.scenes.JungleScene;
@@ -75,7 +76,7 @@ public class Play {
         play.questions = new ArrayList<>();
         switch (sceneCode) {
             case GameUtil.TEMA_DESIERTO:
-                play.scene = new JungleScene(gameActivity);
+                play.scene = new DesertScene(gameActivity);
                 break;
             case GameUtil.TEMA_ESPACIO:
                 break;
@@ -84,6 +85,7 @@ public class Play {
             case GameUtil.TEMA_HIELO:
                 break;
             case GameUtil.TEMA_SELVA:
+                play.scene = new JungleScene(gameActivity);
                 break;
             case GameUtil.TEMA_SUBMARINO:
                 break;

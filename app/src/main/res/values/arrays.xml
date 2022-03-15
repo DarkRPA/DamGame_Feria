@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="ambientes">
-        <item>@string/desierto</item>
-        <item>@string/submarino</item>
-        <item>@string/espacio</item>
-        <item>@string/selva</item>
         <item>@string/ciudad</item>
+        <item>@string/desierto</item>
+        <item>@string/espacio</item>
         <item>@string/hielo</item>
+        <item>@string/selva</item>
+        <item>@string/submarino</item>
     </string-array>
     <string-array name="ambientes_v">
         <item>@string/TEMA_CIUDAD</item>

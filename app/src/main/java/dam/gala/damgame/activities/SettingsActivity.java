@@ -73,9 +73,9 @@ public class SettingsActivity extends AppCompatActivity {
     private void setTema(){
         int sceneCode = Integer.valueOf(getDefaultSharedPreferences(this).getString("theme_setting","100"));
         switch(sceneCode){
-    /*        case GameUtil.TEMA_DESIERTO:
+            case GameUtil.TEMA_DESIERTO:
                 setTheme(R.style.Desert_DamGame);
-                break;*/
+                break;
             case GameUtil.TEMA_SELVA:
                 setTheme(R.style.Jungle_DamGame);
                 break;
