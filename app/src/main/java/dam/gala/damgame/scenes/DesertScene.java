@@ -147,22 +147,27 @@ public class DesertScene extends  Scene{
 
     @Override
     public int getAudioPlay() {
-        return R.raw.my_street;
+        return R.raw.musica_partida;
     }
 
     @Override
     public int getAudioExplosion() {
-        return R.raw.bouncy_crashed;
+        return R.raw.bouncy_choca;
     }
 
     @Override
     public int getAudioCrash() {
-        return R.raw.crash;
+        return R.raw.bouncy_cae;
     }
 
     @Override
     public int getAudioEndGame() {
-        return R.raw.forgotten_eyes;
+        return R.raw.musica_final;
+    }
+
+    @Override
+    public int getAudioMenu() {
+        return R.raw.musica_inicio;
     }
 
     @Override
@@ -212,7 +217,7 @@ public class DesertScene extends  Scene{
 
     @Override
     public int getAudioQuestionCatched() {
-        return R.raw.shimmer;
+        return R.raw.agarrar_pregunta;
     }
 
     @Override

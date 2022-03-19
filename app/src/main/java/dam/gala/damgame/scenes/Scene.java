@@ -96,6 +96,7 @@ public abstract class Scene {
     public abstract int getAudioExplosion();
     public abstract int getAudioCrash();
     public abstract int getAudioEndGame();
+    public abstract  int getAudioMenu();
 
     public abstract int getCrashViewWidth();
     public abstract int getCrashViewHeight();

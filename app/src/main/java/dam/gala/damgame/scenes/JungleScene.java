@@ -170,6 +170,11 @@ public class JungleScene extends Scene {
     }
 
     @Override
+    public int getAudioMenu() {
+        return R.raw.juego_tronos;
+    }
+
+    @Override
     public int getCrashViewWidth() {
         return this.getCrashViewBitmapTop().getWidth();
     }

@@ -110,6 +110,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
         this.setOnTouchListener(this.touchController);
     }
 
+    public void setAudioController(AudioController audioController){
+        this.audioController = audioController;
+    }
+
     /**
      * Dibujar el estado actual de la escena
      * @param canvas Lienzo de dibujo

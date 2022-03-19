@@ -1,5 +1,7 @@
 package dam.gala.damgame.model;
 
+import android.app.Activity;
+
 import androidx.annotation.NonNull;
 import dam.gala.damgame.activities.GameActivity;
 import dam.gala.damgame.scenes.DesertScene;
@@ -97,6 +99,29 @@ public class Play {
         }
         return play;
     }
+
+    public static Scene getSceneByCode(GameActivity gameActivity, int sceneCode){
+        switch (sceneCode) {
+            case GameUtil.TEMA_DESIERTO:
+                return new DesertScene(gameActivity);
+            case GameUtil.TEMA_ESPACIO:
+                break;
+            case GameUtil.TEMA_CIUDAD:
+                break;
+            case GameUtil.TEMA_HIELO:
+                break;
+            case GameUtil.TEMA_SELVA:
+                return new JungleScene(gameActivity);
+            case GameUtil.TEMA_SUBMARINO:
+                break;
+            case GameUtil.TEMA_VOLCANES:
+                break;
+            default:
+                return new JungleScene(gameActivity);
+        }
+        return null;
+    }
+
     //-----------------------------------------------------------------------------------------
     //Métodos la escena del juego
     //-----------------------------------------------------------------------------------------

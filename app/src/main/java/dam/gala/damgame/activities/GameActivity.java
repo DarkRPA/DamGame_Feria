@@ -103,7 +103,22 @@ public class GameActivity extends AppCompatActivity implements InterfaceDialog {
 
         databaseManager.loadQuestions();
 
-       // ArrayList<Question> preguntas = databaseManager.getPreguntas();
+        this.sceneCode = Integer.parseInt(getSharedPreferences(this.getTitle().toString(),
+                Context.MODE_PRIVATE).
+                getString("theme_setting",String.valueOf(GameUtil.TEMA_DESIERTO)));
+
+        this.scene = Play.getSceneByCode(this, this.sceneCode);
+        this.audioController = new AudioController(this);
+        this.audioController.startMenuMusic();
+        //Ya tenemos la scene ahora reproducimos la canción de inicio
+
+
+
+        // ArrayList<Question> preguntas = databaseManager.getPreguntas();
+    }
+
+    public Scene getScene(){
+        return this.scene;
     }
 
 
@@ -111,11 +126,8 @@ public class GameActivity extends AppCompatActivity implements InterfaceDialog {
      * Inicio del juego
      */
     private void startGame(){
-        this.sceneCode = Integer.parseInt(getSharedPreferences(this.getTitle().toString(),
-                Context.MODE_PRIVATE).
-                getString("theme_setting",String.valueOf(GameUtil.TEMA_DESIERTO)));
+
         this.gameMove = Play.createGameMove(this,this.sceneCode);
-        this.scene = this.gameMove.getScene();
         this.config = new GameConfig(this.scene);
         this.getPlay().setConfig(this.config);
 
@@ -131,7 +143,8 @@ public class GameActivity extends AppCompatActivity implements InterfaceDialog {
 
         //hideSystemUI();
 
-        this.audioController = this.gameView.getAudioController();
+        //this.audioController = this.gameView.getAudioController();
+        this.gameView.setAudioController(this.audioController);
         this.audioController.startSceneAudioPlay();
 
         this.loadScoreComponents();

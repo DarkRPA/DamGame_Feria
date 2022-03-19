@@ -11,7 +11,7 @@ import dam.gala.damgame.scenes.Scene;
  */
 public class AudioController {
     private GameActivity gameActivity;
-    private MediaPlayer mediaPlay, mediaEndGame;
+    private MediaPlayer mediaPlay, mediaEndGame, mediaMenu;
     private Scene scene;
     private boolean audioExplosionStarted;
     private boolean audioQuestionCatchedStarted;
@@ -23,13 +23,24 @@ public class AudioController {
      */
     public AudioController(GameActivity gameActivity){
         this.gameActivity = gameActivity;
-        this.scene = this.gameActivity.getPlay().getScene();
+        this.scene = this.gameActivity.getScene();
+    }
+
+    public void startMenuMusic(){
+        this.mediaMenu = MediaPlayer.create(gameActivity,this.scene.getAudioMenu());
+        this.mediaMenu.setLooping(true);
+        this.mediaMenu.start();
+    }
+
+    public void stopMenuMusic(){
+        this.mediaMenu.stop();
     }
 
     /**
      * Inicio de reproducción de audio del sonido principal del juego
      */
     public void startSceneAudioPlay(){
+        this.stopMenuMusic();
         this.mediaPlay = MediaPlayer.create(gameActivity,this.scene.getAudioPlay());
         this.mediaPlay.setLooping(true);
         this.mediaPlay.start();
