@@ -213,6 +213,8 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                     getTimeToQuestion());
         }
 
+        //TODO No esta la verificacion de las colisiones, hay que hacerla
+
         this.gameConfig.setFramesToNewQuestion(this.gameConfig.getFramesToNewQuestion() - 1);
 
         for (QuestionView goQuestion : this.play.getQuestionViews())
