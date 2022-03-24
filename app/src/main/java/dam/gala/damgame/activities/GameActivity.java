@@ -121,6 +121,20 @@ public class GameActivity extends AppCompatActivity implements InterfaceDialog {
         return this.scene;
     }
 
+    @Override
+    protected void onResume() {
+        //Tenemos que actualizar la escena
+        this.sceneCode = Integer.parseInt(getSharedPreferences(this.getTitle().toString(),
+                Context.MODE_PRIVATE).
+                getString("theme_setting",String.valueOf(GameUtil.TEMA_DESIERTO)));
+
+        this.scene = Play.getSceneByCode(this, this.sceneCode);
+        if(this.audioController != null){
+            this.audioController.stopAudioEndGame();
+            this.audioController.startMenuMusic();
+        }
+        super.onResume();
+    }
 
     /**
      * Inicio del juego
