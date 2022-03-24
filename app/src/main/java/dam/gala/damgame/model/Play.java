@@ -116,10 +116,8 @@ public class Play {
                 break;
             case GameUtil.TEMA_VOLCANES:
                 break;
-            default:
-                return new JungleScene(gameActivity);
         }
-        return null;
+        return new JungleScene(gameActivity);
     }
 
     //-----------------------------------------------------------------------------------------

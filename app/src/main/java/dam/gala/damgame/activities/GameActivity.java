@@ -107,8 +107,13 @@ public class GameActivity extends AppCompatActivity implements InterfaceDialog {
                 Context.MODE_PRIVATE).
                 getString("theme_setting",String.valueOf(GameUtil.TEMA_DESIERTO)));
 
+
         this.scene = Play.getSceneByCode(this, this.sceneCode);
-        this.audioController = new AudioController(this);
+
+
+        if(this.audioController == null){
+            this.audioController = new AudioController(this);
+        }
         this.audioController.startMenuMusic();
         //Ya tenemos la scene ahora reproducimos la canción de inicio
 
@@ -122,18 +127,20 @@ public class GameActivity extends AppCompatActivity implements InterfaceDialog {
     }
 
     @Override
-    protected void onResume() {
-        //Tenemos que actualizar la escena
-        this.sceneCode = Integer.parseInt(getSharedPreferences(this.getTitle().toString(),
-                Context.MODE_PRIVATE).
-                getString("theme_setting",String.valueOf(GameUtil.TEMA_DESIERTO)));
-
-        this.scene = Play.getSceneByCode(this, this.sceneCode);
-        if(this.audioController != null){
+    protected void onPause() {
+        if(this.audioController.isAudioEndGameStarted()){
             this.audioController.stopAudioEndGame();
-            this.audioController.startMenuMusic();
         }
-        super.onResume();
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        //Debemos de detener la musica del final del juego
+        if(this.audioController.isAudioEndGameStarted()){
+            this.audioController.stopAudioEndGame();
+        }
+        super.onStop();
     }
 
     /**

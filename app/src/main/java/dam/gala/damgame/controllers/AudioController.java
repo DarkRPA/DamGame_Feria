@@ -15,6 +15,7 @@ public class AudioController {
     private Scene scene;
     private boolean audioExplosionStarted;
     private boolean audioQuestionCatchedStarted;
+    private boolean audioMenuStarted;
     private boolean audioEndGameStarted;
 
     /**
@@ -27,12 +28,17 @@ public class AudioController {
     }
 
     public void startMenuMusic(){
+        if(this.mediaMenu != null && this.audioEndGameStarted){
+            this.stopAudioEndGame();
+        }
+        this.audioMenuStarted = true;
         this.mediaMenu = MediaPlayer.create(gameActivity,this.scene.getAudioMenu());
         this.mediaMenu.setLooping(true);
         this.mediaMenu.start();
     }
 
     public void stopMenuMusic(){
+        this.audioMenuStarted = false;
         this.mediaMenu.stop();
     }
 
@@ -102,11 +108,16 @@ public class AudioController {
         this.audioEndGameStarted = true;
     }
 
+    public boolean isAudioMenuMusicStarted(){
+        return this.audioMenuStarted;
+    }
+
     public boolean isAudioEndGameStarted(){
         return this.audioEndGameStarted;
     }
 
     public void stopAudioEndGame(){
+        this.mediaEndGame.stop();
         this.audioEndGameStarted=false;
     }
 }
