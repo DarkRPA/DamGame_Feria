@@ -67,7 +67,7 @@ public class DesertScene extends  Scene{
 
     @Override
     public int getBouncyBitmapId() {
-        return R.drawable.desert_bg;
+        return R.drawable.desert_anim_bg;
     }
 
     @Override

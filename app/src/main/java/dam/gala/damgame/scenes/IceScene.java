@@ -67,7 +67,7 @@ public class IceScene extends  Scene{
 
     @Override
     public int getBouncyBitmapId() {
-        return R.drawable.ice_bg;
+        return R.drawable.ice_anim_bg;
     }
 
     @Override
