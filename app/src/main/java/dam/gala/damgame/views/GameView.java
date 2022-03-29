@@ -299,7 +299,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                 accessIndex = 0;
             }
 
-            Question question = questions.get(randomGenerator.getRandomNum(accessIndex++));
+            Question question = questions.get(randomGenerator.getRandomNum(accessIndex));
             QuestionView goQuestion = new QuestionView(this.play, question);
             this.play.getQuestionViews().add(goQuestion);
             this.play.setQuestionsCreated(this.play.getQuestionsCreated() + 1);

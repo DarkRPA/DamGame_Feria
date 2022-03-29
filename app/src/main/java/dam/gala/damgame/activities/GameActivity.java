@@ -125,6 +125,16 @@ public class GameActivity extends AppCompatActivity implements InterfaceDialog {
     public Scene getScene(){
         return this.scene;
     }
+    @Override
+    protected void onResume() {
+        this.sceneCode = Integer.parseInt(getSharedPreferences(this.getTitle().toString(),
+                Context.MODE_PRIVATE).
+                getString("theme_setting",String.valueOf(GameUtil.TEMA_DESIERTO)));
+
+
+        this.scene = Play.getSceneByCode(this, this.sceneCode);
+        super.onResume();
+    }
 
     @Override
     protected void onPause() {

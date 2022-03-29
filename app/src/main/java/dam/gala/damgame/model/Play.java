@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.annotation.NonNull;
 import dam.gala.damgame.activities.GameActivity;
 import dam.gala.damgame.scenes.DesertScene;
+import dam.gala.damgame.scenes.IceScene;
 import dam.gala.damgame.utils.GameUtil;
 import dam.gala.damgame.views.CrashView;
 import dam.gala.damgame.scenes.JungleScene;
@@ -85,6 +86,7 @@ public class Play {
             case GameUtil.TEMA_CIUDAD:
                 break;
             case GameUtil.TEMA_HIELO:
+                play.scene = new IceScene(gameActivity);
                 break;
             case GameUtil.TEMA_SELVA:
                 play.scene = new JungleScene(gameActivity);
